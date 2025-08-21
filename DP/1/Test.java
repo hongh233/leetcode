@@ -1,7 +1,7 @@
 import java.io.*;
 
 public class Test {
-    public static void main(String[] args) throws Exception {
+    public static void main(String[] args){
         // Define multiple test cases: input and expected output
         String[][] testCases = {
                 {
@@ -36,11 +36,9 @@ public class Test {
             long memoryBefore = runtime.totalMemory() - runtime.freeMemory();
             long startTime = System.nanoTime();
 
-            boolean threwException = false;
             try {
                 Main.main(null); // Call your main solution
             } catch (Exception e) {
-                threwException = true;
                 System.setIn(originalIn);
                 System.setOut(originalOut);
                 System.out.printf("Test #%d threw an exception: %s\n", idx + 1, e.getMessage());
