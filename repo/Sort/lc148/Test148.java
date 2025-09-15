@@ -2,7 +2,7 @@ package repo.Sort.lc148;
 
 public class Test148 {
     public static String runTest(String input) {
-        // Extract the content inside brackets (e.g., head = [4,2,1,3] → "4,2,1,3")
+        // Extract the content inside brackets (e.g., [4,2,1,3] → "4,2,1,3")
         String listStr = input.replaceAll(".*\\[", "").replaceAll("].*", "").trim();
         if (listStr.isEmpty()) return "[]";
 
