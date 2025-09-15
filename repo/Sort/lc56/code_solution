@@ -3,7 +3,7 @@ package repo.Sort.lc56;
 import java.util.Arrays;
 import java.util.LinkedList;
 
-class Solution56 {
+public class Solution56 {
     public int[][] merge(int[][] intervals) {
         Arrays.sort(intervals, (a,b)->Integer.compare(a[0],b[0]));
         LinkedList<int[]> merged = new LinkedList<>();

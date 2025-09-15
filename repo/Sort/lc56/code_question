@@ -1,6 +1,6 @@
 package repo.Sort.lc56;
 
-class Solution56 {
+public class Solution56 {
     public int[][] merge(int[][] intervals) {
         return new int[0][0];
     }
