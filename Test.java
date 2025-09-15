@@ -30,8 +30,8 @@ public class Test {
 
         for (int i = 0; i < testNum; i++) {
             TestCase tc = cases.get(i);
-            String input = tc.getInput();
-            String expected = tc.getExpected();
+            String input = tc.input();
+            String expected = tc.expected();
 
             String output = String.valueOf(runMethod.invoke(null, input));
 
