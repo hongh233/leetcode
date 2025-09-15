@@ -1,4 +1,5 @@
 import util.IO;
+import util.TestCase;
 
 import java.lang.reflect.Method;
 import java.util.*;
@@ -16,24 +17,29 @@ public class Test {
         in.close();
 
         String tag = TAGS.getOrDefault(leetcode, "Unknown");
-        String path = String.format("repo/%s/lc%d/test", tag, leetcode);
+        String path = String.format("repo/%s/lc%d", tag, leetcode);
+        String jsonPath = path + "/test.json";
 
-        int testNum = IO.getFileNum(path, "input");
+        List<TestCase> cases = IO.readTestCases(jsonPath);
+        String className = String.format("repo.%s.lc%d.Test%d", tag, leetcode, leetcode);
+        Class<?> testClass = Class.forName(className);
+        Method runMethod = testClass.getMethod("runTest", String.class);
+
+        int testNum = cases.size();
+        int pass = 0;
 
         for (int i = 0; i < testNum; i++) {
-            String test_input_name = String.format(path + "/test.%02d.input.txt", i+1);
-            String test_expected_name = String.format(path + "/test.%02d.expected.txt", i+1);
+            TestCase tc = cases.get(i);
+            String input = tc.getInput();
+            String expected = tc.getExpected();
 
-            String input = IO.readFile(test_input_name);
-            String expected = IO.readFile(test_expected_name);
+            String output = String.valueOf(runMethod.invoke(null, input));
 
-            String className = String.format("repo.%s.lc%d.Test%d", tag, leetcode, leetcode);
-            Class<?> testClass = Class.forName(className);
-            Method runMethod = testClass.getMethod("runTest", String.class);
-            String output = (String) runMethod.invoke(null, input);
+            boolean ok = output.trim().equals(expected.trim());
+            if (ok) pass++;
 
-            String result = output.equals(expected) ? "✅" : "❌";
-            System.out.println("=== Test Case " + (i+1) + " "+ result + " ===");
+            String result = ok ? "✅" : "❌";
+            System.out.println("=== Test Case " + (i + 1) + " " + result + " ===");
             System.out.println(">>> Input:");
             System.out.println(" ➡️ " + input);
             System.out.println(">>> Expected:");
@@ -42,5 +48,8 @@ public class Test {
             System.out.println(" 👉 " + output);
             System.out.println();
         }
+
+        double accuracy = testNum == 0 ? 0.0 : (pass * 100.0 / testNum);
+        System.out.printf("Accuracy: %.2f%%, Passed %d/%d%n", accuracy, pass, testNum);
     }
 }
