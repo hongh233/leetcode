@@ -1,52 +1,12 @@
 [
   {
     "id": 1,
-    "input": "",
-    "expected": ""
+    "input": "nums = [3,2,2,3], val = 3",
+    "expected": "2"
   },
   {
     "id": 2,
-    "input": "",
-    "expected": ""
-  },
-  {
-    "id": 3,
-    "input": "",
-    "expected": ""
-  },
-  {
-    "id": 4,
-    "input": "",
-    "expected": ""
-  },
-  {
-    "id": 5,
-    "input": "",
-    "expected": ""
-  },
-  {
-    "id": 6,
-    "input": "",
-    "expected": ""
-  },
-  {
-    "id": 7,
-    "input": "",
-    "expected": ""
-  },
-  {
-    "id": 8,
-    "input": "",
-    "expected": ""
-  },
-  {
-    "id": 9,
-    "input": "",
-    "expected": ""
-  },
-  {
-    "id": 10,
-    "input": "",
-    "expected": ""
+    "input": "nums = [0,1,2,2,3,0,4,2], val = 2",
+    "expected": "5"
   }
 ]

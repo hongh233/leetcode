@@ -7,7 +7,8 @@ import java.util.*;
 public class Test {
     private static final Map<Integer, String> TAGS = Map.of(
     56, "Sort",
-    148, "Sort"
+    148, "Sort",
+            27, "Sort"
     );
 
     public static void main(String[] args) throws Exception {
