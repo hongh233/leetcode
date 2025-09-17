@@ -12,7 +12,8 @@ public class Test {
             179, "Sort",
             75, "Sort",
             215, "Sort",
-            4, "Sort"
+            4, "Sort",
+            206, "LinkedList"
     );
 
     public static void main(String[] args) throws Exception {
