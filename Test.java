@@ -9,7 +9,10 @@ public class Test {
     56, "Sort",
     148, "Sort",
             27, "Sort",
-            179, "Sort"
+            179, "Sort",
+            75, "Sort",
+            215, "Sort",
+            4, "Sort"
     );
 
     public static void main(String[] args) throws Exception {

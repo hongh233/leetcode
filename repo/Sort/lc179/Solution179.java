@@ -2,7 +2,7 @@
 
 package repo.Sort.lc179;
 
-class Solution179 {
+public class Solution179 {
     public String largestNumber(int[] nums) {
         String[] arr = new String[nums.length];
         for(int i = 0; i < nums.length; i++) {
