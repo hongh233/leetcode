@@ -5,17 +5,18 @@ import java.lang.reflect.Method;
 import java.util.*;
 
 public class Test {
-    private static final Map<Integer, String> TAGS = Map.of(
-    56, "Sort",
-    148, "Sort",
-            27, "Sort",
-            179, "Sort",
-            75, "Sort",
-            215, "Sort",
-            4, "Sort",
-            206, "LinkedList",
-            876, "LinkedList",
-            160, "LinkedList"
+    private static final Map<Integer, String> TAGS = Map.ofEntries(
+        Map.entry(56, "Sort"),
+        Map.entry(148, "Sort"),
+        Map.entry(27, "Sort"),
+        Map.entry(179, "Sort"),
+        Map.entry(75, "Sort"),
+        Map.entry(215, "Sort"),
+        Map.entry(4, "Sort"),
+        Map.entry(206, "LinkedList"),
+        Map.entry(876, "LinkedList"),
+        Map.entry(160, "LinkedList"),
+        Map.entry(141, "LinkedList")
     );
 
     public static void main(String[] args) throws Exception {

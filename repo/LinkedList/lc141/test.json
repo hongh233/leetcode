@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "input": "head = [3,2,0,-4], pos = 1",
+    "expected": "true"
+  },
+  {
+    "id": 2,
+    "input": "head = [1,2], pos = 0",
+    "expected": "true"
+  },
+  {
+    "id": 3,
+    "input": "head = [1], pos = -1",
+    "expected": "false"
+  }
+]
