@@ -25,7 +25,7 @@ public class Solution206 {
         ListNode curr = head;
 
         while (true) {
-            ListNode nextNode = curr.next;
+            ListNode nextNode = curr.next; // pre-store
             curr.next = prev;
             prev = curr;
 
