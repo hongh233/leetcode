@@ -1,0 +1,17 @@
+// requirement: O(m+n) runtime and O(1) memory
+
+package repo.LinkedList.lc160;
+
+public class Solution160 {
+     public static class ListNode {
+         int val;
+         ListNode next;
+         ListNode(int x) {
+             val = x;
+             next = null;
+         }
+     }
+     public ListNode getIntersectionNode(ListNode headA, ListNode headB) {
+         return null;
+     }
+}
