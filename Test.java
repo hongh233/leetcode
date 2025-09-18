@@ -17,7 +17,8 @@ public class Test {
             Map.entry(876, "LinkedList"),
             Map.entry(160, "LinkedList"),
             Map.entry(141, "LinkedList"),
-            Map.entry(92, "LinkedList")
+            Map.entry(92, "LinkedList"),
+            Map.entry(328, "LinkedList")
     );
 
     public static void main(String[] args) throws Exception {
