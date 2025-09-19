@@ -1,11 +1,6 @@
 package repo.Queue.lc346;
 
 public class Solution346 {
-    /**
-     * Your MovingAverage object will be instantiated and called as such:
-     * MovingAverage obj = new MovingAverage(size);
-     * double param_1 = obj.next(val);
-     */
     public static class MovingAverage {
 
         /** Initialize your data structure here. */
@@ -18,3 +13,9 @@ public class Solution346 {
         }
     }
 }
+
+/**
+ * Your MovingAverage object will be instantiated and called as such:
+ * MovingAverage obj = new MovingAverage(size);
+ * double param_1 = obj.next(val);
+ */

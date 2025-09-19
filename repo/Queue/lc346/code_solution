@@ -4,11 +4,6 @@ import java.util.LinkedList;
 import java.util.Queue;
 
 public class Solution346 {
-    /**
-     * Your MovingAverage object will be instantiated and called as such:
-     * MovingAverage obj = new MovingAverage(size);
-     * double param_1 = obj.next(val);
-     */
     public static class MovingAverage {
 
         int size;
@@ -32,3 +27,9 @@ public class Solution346 {
         }
     }
 }
+
+/**
+ * Your MovingAverage object will be instantiated and called as such:
+ * MovingAverage obj = new MovingAverage(size);
+ * double param_1 = obj.next(val);
+ */
