@@ -18,6 +18,7 @@ public class TestData {
             Map.entry(225, "Queue"),
             Map.entry(346, "Queue"),
             Map.entry(281, "Queue"),
-            Map.entry(1429, "Queue")
+            Map.entry(1429, "Queue"),
+            Map.entry(54, "Queue")
     );
 }
