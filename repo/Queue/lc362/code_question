@@ -1,0 +1,27 @@
+package repo.Queue.lc362;
+
+/**
+ * Your HitCounter object will be instantiated and called as such:
+ * HitCounter obj = new HitCounter();
+ * obj.hit(timestamp);
+ * int param_2 = obj.getHits(timestamp);
+ */
+
+// both timestamp from hit() and getHit() follows chronological order
+
+public class Solution362 {
+    public static class HitCounter {
+
+        public HitCounter() {
+
+        }
+
+        public void hit(int timestamp) {
+
+        }
+
+        public int getHits(int timestamp) {
+            return 0;
+        }
+    }
+}
