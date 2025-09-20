@@ -27,6 +27,7 @@ public class TestData {
             Map.entry(224, "Stack"),
             Map.entry(20, "Stack"),
             Map.entry(1472, "Stack"),
-            Map.entry(1209, "Stack")
+            Map.entry(1209, "Stack"),
+            Map.entry(1249, "Stack")
     );
 }

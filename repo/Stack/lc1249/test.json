@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "input": "lee(t(c)o)de)",
+    "expected": "lee(t(c)o)de"
+  },
+  {
+    "id": 2,
+    "input": "a)b(c)d",
+    "expected": "ab(c)d"
+  },
+  {
+    "id": 3,
+    "input": "))((",
+    "expected": ""
+  }
+]
