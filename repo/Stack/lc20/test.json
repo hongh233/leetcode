@@ -1,0 +1,27 @@
+[
+  {
+    "id": 1,
+    "input": "s = ()",
+    "expected": "true"
+  },
+  {
+    "id": 2,
+    "input": "s = ()[]{}",
+    "expected": "true"
+  },
+  {
+    "id": 3,
+    "input": "s = (]",
+    "expected": "false"
+  },
+  {
+    "id": 4,
+    "input": "([])",
+    "expected": "true"
+  },
+  {
+    "id": 5,
+    "input": "([)]",
+    "expected": "false"
+  }
+]
