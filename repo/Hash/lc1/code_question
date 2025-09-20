@@ -1,0 +1,9 @@
+// use hash
+
+package repo.Hash.lc1;
+
+public class Solution1 {
+    public int[] twoSum(int[] nums, int target) {
+        return null;
+    }
+}
