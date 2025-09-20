@@ -1,0 +1,17 @@
+[
+  {
+    "id": 1,
+    "input": "s = abcd, k = 2",
+    "expected": "abcd"
+  },
+  {
+    "id": 2,
+    "input": "s = deeedbbcccbdaa, k = 3",
+    "expected": "aa"
+  },
+  {
+    "id": 3,
+    "input": "s = pbbcggttciiippooaais, k = 2",
+    "expected": "ps"
+  }
+]
