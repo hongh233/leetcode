@@ -1,0 +1,7 @@
+[
+  {
+    "id": 1,
+    "input": "[RandomizedSet, insert, remove, insert, remove, insert][[], [1], [2], [2], [1], [2]]",
+    "expected": "[null, true, false, true, true, false]"
+  }
+]
