@@ -1,0 +1,11 @@
+// requirement: O(mn) runtime and O(m+n) space complexity
+// improve:     O(mn) runtime and O(1) space complexity
+
+package repo.Hash.lc73;
+
+public class Solution73 {
+    public void setZeroes(int[][] matrix) {
+        int m = matrix.length;
+        int n = matrix[0].length;
+    }
+}

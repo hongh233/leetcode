@@ -1,0 +1,31 @@
+// O(mn) runtime and O(m+n) space complexity
+
+package repo.Hash.lc73;
+import java.util.HashSet;
+
+public class Solution73 {
+    public void setZeroes(int[][] matrix) {
+        int m = matrix.length;
+        int n = matrix[0].length;
+
+        HashSet<Integer> setRow = new HashSet<>();
+        HashSet<Integer> setCol = new HashSet<>();
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (matrix[i][j] == 0) {
+                    setRow.add(i);
+                    setCol.add(j);
+                }
+            }
+        }
+
+        for (int i = 0; i < m; i++) {
+            for (int j = 0; j < n; j++) {
+                if (setRow.contains(i) || setCol.contains(j)) {
+                    matrix[i][j] = 0;
+                }
+            }
+        }
+    }
+}

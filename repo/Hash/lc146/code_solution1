@@ -1,5 +1,4 @@
-// This is O(n) runtime solution, could be improved by
-// using self-implemented doubly-linked list
+// O(n) runtime solution (could be improved)
 
 package repo.Hash.lc146;
 
