@@ -1,0 +1,7 @@
+package repo.Hash.lc350;
+
+public class Solution350 {
+    public int[] intersect(int[] nums1, int[] nums2) {
+        return null;
+    }
+}
