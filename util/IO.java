@@ -76,36 +76,71 @@ public class IO {
     private static final Pattern P_INPUT =
             Pattern.compile("\"input\"\\s*:\\s*\"([^\"]*)\"");
 
+
     private static void addOneTestCase(String objJson, List<TestCase> out) {
         String input = findFirstGroup(P_INPUT, objJson);
-        String[] expected = extractExpected(objJson);
+        String[] expected = extractExpectedArray(objJson);
         if (input == null || expected == null) {
             throw new IllegalArgumentException("Missing 'input' or 'expected' in object: " + objJson);
         }
         out.add(new TestCase(input, expected));
     }
 
+
     private static String findFirstGroup(Pattern p, String s) {
         Matcher m = p.matcher(s);
         return m.find() ? m.group(1) : null;
     }
 
-    private static String[] extractExpected(String objJson) {
-        int idx = indexOfExpectedKey(objJson);
-        if (idx < 0) return null;
+    private static String[] extractExpectedArray(String objJson) {
+        if (objJson == null) return null;
 
-        int start = objJson.indexOf('{', idx);
-        int end = findMatchingBrace(objJson, start);
-        if (start < 0 || end < 0) return null;
+        int keyIdx = indexOfExpectedKey(objJson);
+        if (keyIdx < 0) return null;
 
-        String inside = objJson.substring(start + 1, end).trim();
-        if (inside.isEmpty()) return new String[0];
+        int i = keyIdx;
+        int n = objJson.length();
 
-        List<String> values = new ArrayList<>();
-        Matcher m = Pattern.compile(":\\s*\"(.*?)\"").matcher(inside);
-        while (m.find()) values.add(m.group(1));
-        return values.toArray(new String[0]);
+        while (i < n && objJson.charAt(i) != ':') i++;
+        if (i >= n) return null;
+        i++;
+
+        while (i < n && Character.isWhitespace(objJson.charAt(i))) i++;
+        if (i >= n) return null;
+
+        char first = objJson.charAt(i);
+
+        if (first == '"') {
+            StringBuilder sb = new StringBuilder();
+            i++;
+            boolean esc = false;
+            while (i < n) {
+                char c = objJson.charAt(i++);
+                if (esc) { sb.append(c); esc = false; }
+                else if (c == '\\') esc = true;
+                else if (c == '"') break;
+                else sb.append(c);
+            }
+            return new String[]{sb.toString()};
+        }
+
+        if (first == '{') {
+            int start = i;
+            int end = findMatchingBrace(objJson, start);
+            if (end < 0) return null;
+            String expectedObj = objJson.substring(start, end + 1);
+
+            List<String> list = new ArrayList<>();
+            Matcher m = Pattern.compile(":\\s*\"(.*?)\"").matcher(expectedObj);
+            while (m.find()) {
+                list.add(m.group(1).trim());
+            }
+            return list.toArray(new String[0]);
+        }
+
+        return null;
     }
+
 
     private static int indexOfExpectedKey(String s) {
         Pattern p = Pattern.compile("\"expected\"\\s*:");

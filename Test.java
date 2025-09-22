@@ -45,7 +45,9 @@ public class Test {
             System.out.println(">>> Input:");
             System.out.println(" ➡️ " + input);
             System.out.println(">>> Expected:");
-            System.out.println(" ➡️ " + Arrays.toString(expected));
+            for (String exp : expected) {
+                System.out.println(" ➡️ " + exp);
+            }
             System.out.println(">>> Output:");
             System.out.println(" 👉 " + output);
             System.out.println();

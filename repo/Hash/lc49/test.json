@@ -3,17 +3,22 @@
     "id": 1,
     "input": "strs = [eat,tea,tan,ate,nat,bat]",
     "expected": {
-      "1": "[[bat],[nat,tan],[ate,eat,tea]]"
+      "1": "[[bat],[nat,tan],[ate,eat,tea]]",
+      "2": "[[ate,eat,tea],[bat],[nat,tan]]"
     }
   },
   {
     "id": 2,
     "input": "strs = []",
-    "expected": "[[]]"
+    "expected": {
+      "1": "[[]]"
+    }
   },
   {
     "id": 3,
     "input": "strs = [a]",
-    "expected": "[[a]]"
+    "expected": {
+      "1": "[[a]]"
+    }
   }
 ]
