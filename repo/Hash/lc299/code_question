@@ -1,0 +1,9 @@
+package repo.Hash.lc299;
+
+public class Solution299 {
+    public String getHint(String secret, String guess) {
+        return null;
+    }
+}
+
+// secret.length == guess.length

@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "input": "secret = 1807, guess = 7810",
+    "expected": {
+      "1": "1A3B"
+    }
+  },
+  {
+    "id": 2,
+    "input": "secret = 1123, guess = 0111",
+    "expected": {
+      "1": "1A1B"
+    }
+  },
+  {
+    "id": 3,
+    "input": "secret = 1, guess = 0",
+    "expected": {
+      "1": "0A0B"
+    }
+  },
+  {
+    "id": 4,
+    "input": "secret = 1, guess = 1",
+    "expected": {
+      "1": "1A0B"
+    }
+  },
+  {
+    "id": 5,
+    "input": "secret = 11, guess = 10",
+    "expected": {
+      "1": "1A0B"
+    }
+  },
+  {
+    "id": 6,
+    "input": "secret = 11, guess = 01",
+    "expected": {
+      "1": "1A0B"
+    }
+  },
+  {
+    "id": 7,
+    "input": "secret = 11, guess = 11",
+    "expected": {
+      "1": "2A0B"
+    }
+  },
+  {
+    "id": 8,
+    "input": "secret = 12, guess = 21",
+    "expected": {
+      "1": "0A2B"
+    }
+  }
+]
