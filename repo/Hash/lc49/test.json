@@ -1,0 +1,19 @@
+[
+  {
+    "id": 1,
+    "input": "strs = [eat,tea,tan,ate,nat,bat]",
+    "expected": {
+      "1": "[[bat],[nat,tan],[ate,eat,tea]]"
+    }
+  },
+  {
+    "id": 2,
+    "input": "strs = []",
+    "expected": "[[]]"
+  },
+  {
+    "id": 3,
+    "input": "strs = [a]",
+    "expected": "[[a]]"
+  }
+]

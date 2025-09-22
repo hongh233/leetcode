@@ -2,6 +2,8 @@
   {
     "id": 1,
     "input": "[HitCounter, hit, hit, hit, getHits, hit, getHits, getHits][[], [1], [2], [3], [4], [300], [300], [301]]",
-    "expected": "[null, null, null, null, 3, null, 4, 3]"
+    "expected": {
+      "1": "[null, null, null, null, 3, null, 4, 3]"
+    }
   }
 ]

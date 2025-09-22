@@ -2,16 +2,22 @@
   {
     "id": 1,
     "input": "",
-    "expected": ""
+    "expected": {
+      "1": ""
+    }
   },
   {
     "id": 2,
     "input": "",
-    "expected": ""
+    "expected": {
+      "1": ""
+    }
   },
   {
     "id": 3,
     "input": "",
-    "expected": ""
+    "expected": {
+      "1": ""
+    }
   }
 ]

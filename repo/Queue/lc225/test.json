@@ -2,6 +2,8 @@
   {
     "id": 1,
     "input": "[MyStack, push, push, top, pop, empty][[], [1], [2], [], [], []]",
-    "expected": "[null, null, null, 2, 2, false]"
+    "expected": {
+      "1": "[null, null, null, 2, 2, false]"
+    }
   }
 ]

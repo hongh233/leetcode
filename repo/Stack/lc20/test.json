@@ -2,26 +2,36 @@
   {
     "id": 1,
     "input": "s = ()",
-    "expected": "true"
+    "expected": {
+      "1": "true"
+    }
   },
   {
     "id": 2,
     "input": "s = ()[]{}",
-    "expected": "true"
+    "expected": {
+      "1": "true"
+    }
   },
   {
     "id": 3,
     "input": "s = (]",
-    "expected": "false"
+    "expected": {
+      "1": "false"
+    }
   },
   {
     "id": 4,
     "input": "([])",
-    "expected": "true"
+    "expected": {
+      "1": "true"
+    }
   },
   {
     "id": 5,
     "input": "([)]",
-    "expected": "false"
+    "expected": {
+      "1": "false"
+    }
   }
 ]

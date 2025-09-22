@@ -2,16 +2,22 @@
   {
     "id": 1,
     "input": "s = abcd, k = 2",
-    "expected": "abcd"
+    "expected": {
+      "1": "abcd"
+    }
   },
   {
     "id": 2,
     "input": "s = deeedbbcccbdaa, k = 3",
-    "expected": "aa"
+    "expected": {
+      "1": "aa"
+    }
   },
   {
     "id": 3,
     "input": "s = pbbcggttciiippooaais, k = 2",
-    "expected": "ps"
+    "expected": {
+      "1": "ps"
+    }
   }
 ]

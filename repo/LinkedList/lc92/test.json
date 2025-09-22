@@ -2,11 +2,15 @@
   {
     "id": 1,
     "input": "head = [1,2,3,4,5], left = 2, right = 4",
-    "expected": "[1,4,3,2,5]"
+    "expected": {
+      "1": "[1,4,3,2,5]"
+    }
   },
   {
     "id": 2,
     "input": "head = [5], left = 1, right = 1",
-    "expected": "[5]"
+    "expected": {
+      "1": "[5]"
+    }
   }
 ]
