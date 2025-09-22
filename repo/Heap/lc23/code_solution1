@@ -1,0 +1,44 @@
+// everytime find min over all heads of lists
+// time: O(Nk); space: O(1);
+// N is num of nodes, k is num of lists
+
+package repo.Heap.lc23;
+
+public class Solution23 {
+    public static class ListNode {
+        int val;
+        ListNode next;
+        ListNode() {}
+        ListNode(int val) { this.val = val; }
+        ListNode(int val, ListNode next) {
+            this.val = val;
+            this.next = next;
+        }
+    }
+    public ListNode mergeKLists(ListNode[] lists) {
+        ListNode head = new ListNode(0);
+        ListNode tail = head;
+
+        while(true) {
+            int minIdx = -1;
+            int minValue = Integer.MAX_VALUE;
+
+            for (int i = 0; i < lists.length; i++) {
+                if (lists[i] != null && lists[i].val < minValue) {
+                    minValue = lists[i].val;
+                    minIdx = i;
+                }
+            }
+            if (minIdx == -1) break;
+
+            ListNode minNode = lists[minIdx];
+            lists[minIdx] = lists[minIdx].next;
+            minNode.next = null;
+            tail.next = minNode;
+            tail = tail.next;
+        }
+
+        return head.next;
+    }
+
+}
