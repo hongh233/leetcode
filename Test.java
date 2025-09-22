@@ -27,11 +27,17 @@ public class Test {
         for (int i = 0; i < testNum; i++) {
             TestCase tc = cases.get(i);
             String input = tc.input();
-            String expected = tc.expected();
+            String[] expected = tc.expected();
 
-            String output = String.valueOf(runMethod.invoke(null, input));
+            String output = String.valueOf(runMethod.invoke(null, input)).trim();
 
-            boolean ok = output.trim().equals(expected.trim());
+            boolean ok = false;
+            for (String e : expected) {
+                if (output.equals(e.trim())) {
+                    ok = true;
+                    break;
+                }
+            }
             if (ok) pass++;
 
             String result = ok ? "✅" : "❌";
@@ -39,7 +45,7 @@ public class Test {
             System.out.println(">>> Input:");
             System.out.println(" ➡️ " + input);
             System.out.println(">>> Expected:");
-            System.out.println(" ➡️ " + expected);
+            System.out.println(" ➡️ " + Arrays.toString(expected));
             System.out.println(">>> Output:");
             System.out.println(" 👉 " + output);
             System.out.println();
