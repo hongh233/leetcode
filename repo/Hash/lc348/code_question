@@ -1,0 +1,20 @@
+package repo.Hash.lc348;
+
+/**
+ * Your TicTacToe object will be instantiated and called as such:
+ * TicTacToe obj = new TicTacToe(n);
+ * int param_1 = obj.move(row,col,player);
+ */
+
+public class Solution348 {
+    public static class TicTacToe {
+
+        public TicTacToe(int n) {
+
+        }
+
+        public int move(int row, int col, int player) {
+            return 0;
+        }
+    }
+}
