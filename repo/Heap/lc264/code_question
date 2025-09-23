@@ -1,0 +1,10 @@
+// expectation: O(nlogm) time, O(m) space; m is size of set
+// best dp approach: O(n) time, O(n) space
+
+package repo.Heap.lc264;
+
+public class Solution264 {
+    public int nthUglyNumber(int n) {
+        return 0;
+    }
+}

@@ -1,0 +1,41 @@
+// O(nlogm) time, O(m) space; m is size of set
+// hashset for reduce duplicate, priority queue for pick min in O(log)
+
+package repo.Heap.lc264;
+import java.util.HashSet;
+import java.util.PriorityQueue;
+
+public class Solution264 {
+    public int nthUglyNumber(int n) {
+
+        HashSet<Long> hs = new HashSet<>();
+        PriorityQueue<Long> pq = new PriorityQueue<>();
+
+        hs.add(1L);
+        pq.add(1L);
+
+        long min = 0;
+
+        for (int i = 0; i < n; i++) {
+            min = pq.poll();
+
+            long minBy2 = min * 2L;
+            long minBy3 = min * 3L;
+            long minBy5 = min * 5L;
+            if (!hs.contains(minBy2)) {
+                hs.add(minBy2);
+                pq.add(minBy2);
+            }
+            if (!hs.contains((minBy3))) {
+                hs.add(minBy3);
+                pq.add(minBy3);
+            }
+            if (!hs.contains(minBy5)) {
+                hs.add(minBy5);
+                pq.add(minBy5);
+            }
+        }
+
+        return (int) min;
+    }
+}
