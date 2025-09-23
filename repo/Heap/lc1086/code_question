@@ -1,0 +1,9 @@
+// for each id, there will be at least 5 scores
+
+package repo.Heap.lc1086;
+
+public class Solution1086 {
+    public int[][] highFive(int[][] items) {
+        return null;
+    }
+}
