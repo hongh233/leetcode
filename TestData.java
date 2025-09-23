@@ -46,6 +46,7 @@ public class TestData {
             Map.entry(1086, "Heap"),
             Map.entry(88, "Heap"),
             Map.entry(692, "Heap"),
-            Map.entry(378, "Heap")
+            Map.entry(378, "Heap"),
+            Map.entry(295, "Heap")
     );
 }

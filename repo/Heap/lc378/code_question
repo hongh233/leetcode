@@ -1,3 +1,6 @@
+// follow up: Could you solve the problem in O(1) space complexity?
+// hint: use binary search
+
 package repo.Heap.lc378;
 
 public class Solution378 {
