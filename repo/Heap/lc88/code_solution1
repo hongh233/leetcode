@@ -1,0 +1,22 @@
+// heap solution
+// O((m+n)log(m+n)) time, O(m+n) space
+// could be improved to O(m+n) time, O(1) space
+
+package repo.Heap.lc88;
+
+import java.util.PriorityQueue;
+
+public class Solution88 {
+    public void merge(int[] nums1, int m, int[] nums2, int n) {
+        PriorityQueue<Integer> pq = new PriorityQueue<>();
+        for (int i = 0; i < m; i++) {
+            pq.add(nums1[i]);
+        }
+        for (int i = 0; i < n; i++) {
+            pq.add(nums2[i]);
+        }
+        for (int i = 0; i < nums1.length; i++) {
+            nums1[i] = pq.poll();
+        }
+    }
+}
