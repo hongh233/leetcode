@@ -1,0 +1,8 @@
+package repo.Heap.lc692;
+import java.util.List;
+
+public class Solution692 {
+    public List<String> topKFrequent(String[] words, int k) {
+        return null;
+    }
+}

@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "input": "words = [i,love,leetcode,i,love,coding], k = 2",
+    "expected": {
+      "1": "[i,love]"
+    }
+  },
+  {
+    "id": 2,
+    "input": "words = [the,day,is,sunny,the,the,the,sunny,is,is], k = 4",
+    "expected": {
+      "1": "[the,is,sunny,day]"
+    }
+  }
+]
