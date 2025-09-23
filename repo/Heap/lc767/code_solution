@@ -44,11 +44,12 @@ public class Solution767 {
         char[] ans = new char[s.length()];
         int i = 0;
 
+        // take two elems at a time
         while (pq.size() >= 2) {
             Pair a = pq.poll();
-            Pair b = pq.poll();
             ans[i] = a.digit;
             i++;
+            Pair b = pq.poll();
             ans[i] = b.digit;
             i++;
 
