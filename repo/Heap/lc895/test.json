@@ -1,0 +1,16 @@
+[
+  {
+    "id": 1,
+    "input": "[FreqStack,push,push,push,push,push,push,pop,pop,pop,pop][[],[5],[7],[5],[7],[4],[5],[],[],[],[]]",
+    "expected": {
+      "1": "[null,null,null,null,null,null,null,5,7,5,4]"
+    }
+  },
+  {
+    "id": 2,
+    "input": "[FreqStack,push,push,push,push,pop,pop,push,push,push,pop,pop,pop][[],[1],[1],[1],[2],[],[],[2],[2],[1],[],[],[]]",
+    "expected": {
+      "1": "[null,null,null,null,null,1,1,null,null,null,2,1,2]"
+    }
+  }
+]
