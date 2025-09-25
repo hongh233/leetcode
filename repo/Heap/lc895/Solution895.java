@@ -1,3 +1,13 @@
+// hashmap + heap solution, k is size of heap, O(k) space
+// push: O(logk) time
+// pop:  O(logk) time
+// could improve to O(1) time for both push and pop
+
+// TD:
+// two hashmap solution, k is size of heap, O(k) space
+// push: O(1) time
+// pop:  O(1) time
+
 package repo.Heap.lc895;
 
 import java.util.Comparator;
@@ -24,7 +34,7 @@ public class Solution895 {
             int timestamp;
         }
         PriorityQueue<Pair> pq;        // [0]: val; [1]: freq; [2]: timestamp
-        HashMap<Integer, Integer> hm;  // k: value; v: freq
+        HashMap<Integer, Integer> map;  // k: value; v: freq
         int timestamp;
 
         public FreqStack() {
@@ -40,23 +50,23 @@ public class Solution895 {
                         }
                     }
             );
-            this.hm = new HashMap<>();
+            this.map = new HashMap<>();
             this.timestamp = 0;
         }
 
         public void push(int val) {
-            hm.put(val, hm.getOrDefault(val, 0) + 1);
-            pq.add(new Pair(val, hm.get(val), timestamp));
+            map.put(val, map.getOrDefault(val, 0) + 1);
+            pq.add(new Pair(val, map.get(val), timestamp));
             timestamp++;
         }
 
         public int pop() {
             Pair top = pq.poll();
             int val = top.value;
-            hm.put(val,hm.get(val)-1);
+            map.put(val, map.get(val)-1);
 
-            if (hm.get(val) == 0) {
-                hm.remove(val);
+            if (map.get(val) == 0) {
+                map.remove(val);
             }
             return val;
         }
