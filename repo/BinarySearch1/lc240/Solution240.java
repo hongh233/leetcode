@@ -1,7 +1,7 @@
 // normal binary search, O(mlogn) time, O(1) space
 // could be improved to O(1) time
 
-package repo.BinarySearch.lc240;
+package repo.BinarySearch1.lc240;
 
 public class Solution240 {
     public boolean searchMatrix(int[][] matrix, int target) {

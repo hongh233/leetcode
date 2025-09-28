@@ -1,14 +1,14 @@
-package repo.BinarySearch.lc34;
+package repo.BinarySearch1.lc33;
 
-public class Test34 {
+public class Test33 {
     public static String runTest(String input) {
         int[] nums = parseIntArray(extractArray(input, "nums"));
         int target = parseInt(extractValue(input, "target"));
 
-        Solution34 sol = new Solution34();
-        int[] ans = sol.searchRange(nums, target);
+        Solution33 sol = new Solution33();
+        int ans = sol.search(nums, target);
 
-        return arrayToString(ans);
+        return String.valueOf(ans);
     }
 
     private static String extractArray(String s, String key) {
@@ -36,16 +36,5 @@ public class Test34 {
 
     private static int parseInt(String s) {
         return Integer.parseInt(s.trim());
-    }
-
-    private static String arrayToString(int[] arr) {
-        StringBuilder sb = new StringBuilder();
-        sb.append('[');
-        for (int i = 0; i < arr.length; i++) {
-            if (i > 0) sb.append(',');
-            sb.append(arr[i]);
-        }
-        sb.append(']');
-        return sb.toString();
     }
 }

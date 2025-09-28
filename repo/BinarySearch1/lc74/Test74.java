@@ -1,4 +1,4 @@
-package repo.BinarySearch.lc74;
+package repo.BinarySearch1.lc74;
 
 import java.util.ArrayList;
 import java.util.List;

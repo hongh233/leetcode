@@ -1,6 +1,6 @@
-package repo.BinarySearch.lc74;
+package repo.BinarySearch1.lc240;
 
-public class Solution74 {
+public class Solution240 {
     public boolean searchMatrix(int[][] matrix, int target) {
         return true;
     }

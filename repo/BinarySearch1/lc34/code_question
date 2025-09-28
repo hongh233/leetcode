@@ -1,4 +1,4 @@
-package repo.BinarySearch.lc34;
+package repo.BinarySearch1.lc34;
 
 public class Solution34 {
     public int[] searchRange(int[] nums, int target) {

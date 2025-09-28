@@ -1,4 +1,4 @@
-package repo.BinarySearch.lc33;
+package repo.BinarySearch1.lc33;
 
 public class Solution33 {
     public int search(int[] nums, int target) {

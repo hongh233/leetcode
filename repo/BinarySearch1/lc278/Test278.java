@@ -1,4 +1,4 @@
-package repo.BinarySearch.lc278;
+package repo.BinarySearch1.lc278;
 
 public class Test278 {
     public static String runTest(String input) {

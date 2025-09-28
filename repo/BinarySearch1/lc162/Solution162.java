@@ -1,4 +1,4 @@
-package repo.BinarySearch.lc162;
+package repo.BinarySearch1.lc162;
 
 public class Solution162 {
     public int findPeakElement(int[] nums) {

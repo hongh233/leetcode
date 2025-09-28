@@ -1,4 +1,4 @@
-package repo.BinarySearch.lc240;
+package repo.BinarySearch1.lc240;
 
 import java.util.ArrayList;
 import java.util.List;

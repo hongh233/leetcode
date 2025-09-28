@@ -51,11 +51,11 @@ public class TestData {
             Map.entry(767, "Heap"),
             Map.entry(1438, "Heap"),
             Map.entry(895, "Heap"),
-            Map.entry(34, "BinarySearch"),
-            Map.entry(33, "BinarySearch"),
-            Map.entry(162, "BinarySearch"),
-            Map.entry(278, "BinarySearch"),
-            Map.entry(74, "BinarySearch"),
-            Map.entry(240, "BinarySearch")
+            Map.entry(34, "BinarySearch1"),
+            Map.entry(33, "BinarySearch1"),
+            Map.entry(162, "BinarySearch1"),
+            Map.entry(278, "BinarySearch1"),
+            Map.entry(74, "BinarySearch1"),
+            Map.entry(240, "BinarySearch1")
     );
 }

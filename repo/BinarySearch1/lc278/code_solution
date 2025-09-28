@@ -1,4 +1,4 @@
-package repo.BinarySearch.lc278;
+package repo.BinarySearch1.lc278;
 
 public class Solution278 {
     /* The isBadVersion API is defined in the parent class VersionControl.

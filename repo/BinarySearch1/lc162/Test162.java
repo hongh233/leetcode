@@ -1,4 +1,4 @@
-package repo.BinarySearch.lc162;
+package repo.BinarySearch1.lc162;
 
 public class Test162 {
     public static String runTest(String input) {
