@@ -1,6 +1,7 @@
 // f(value) = sum(min(arr[i],value)), which is monotonically increase
 // we want to use binary search f(value) to get min|f(value)-target|
 
+// O(nlogmax(arr)) time
 package repo.BinarySearch2.lc1300;
 
 public class Solution1300 {
