@@ -1,0 +1,29 @@
+// linear time solution
+
+package repo.BinarySearch2.lc1060;
+
+public class Solution1060 {
+    public int missingElement(int[] nums, int k) {
+
+        int totalNum = 0;
+        int result = 0;
+        boolean findResult = false;
+        for (int i = 0; i < nums.length-1; i++) {
+            int diff = nums[i+1]-nums[i];
+            if (diff != 1) {
+                totalNum = totalNum + diff - 1;
+            }
+            if (totalNum >= k) {
+                int prevTotal = totalNum - diff + 1;
+                int remainNum = k - prevTotal;
+                result = nums[i] + remainNum;
+                findResult = true;
+                break;
+            }
+        }
+        if (!findResult) {
+            result = nums[nums.length-1] + k - totalNum;
+        }
+        return result;
+    }
+}
