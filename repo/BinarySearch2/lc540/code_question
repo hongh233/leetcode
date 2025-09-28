@@ -1,0 +1,9 @@
+// Your solution must run in O(log n) time and O(1) space.
+
+package repo.BinarySearch2.lc540;
+
+public class Solution540 {
+    public int singleNonDuplicate(int[] nums) {
+        return 0;
+    }
+}
