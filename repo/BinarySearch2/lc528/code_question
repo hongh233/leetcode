@@ -1,0 +1,20 @@
+package repo.BinarySearch2.lc528;
+
+/**
+ * Your Solution object will be instantiated and called as such:
+ * Solution obj = new Solution(w);
+ * int param_1 = obj.pickIndex();
+ */
+
+public class Solution528 {
+    public static class Solution {
+
+        public Solution(int[] w) {
+
+        }
+
+        public int pickIndex() {
+            return 0;
+        }
+    }
+}
