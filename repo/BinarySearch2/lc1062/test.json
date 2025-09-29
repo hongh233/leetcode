@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "input": "s = abcd",
+    "expected": {
+      "1": "0"
+    }
+  },
+  {
+    "id": 2,
+    "input": "s = abbaba",
+    "expected": {
+      "1": "2"
+    }
+  },
+  {
+    "id": 3,
+    "input": "s = aabcaabdaab",
+    "expected": {
+      "1": "3"
+    }
+  }
+]
